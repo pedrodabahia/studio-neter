@@ -1,23 +1,9 @@
 import { useState } from "react";
 import { useInView } from "./hooks/useInview";
 import { cn } from "./hooks/utils";
+import  photosRadom  from "../contains/hooks/fotos";
 
-const filters = ["Todos", "Casamentos", "Maquiagem", "Cílios", "Noivas", "Bastidores"];
-
-const photos = [
-  { src: "./images/fotoGalery1.png", category: "Casamentos", alt: "Maquiagem de noiva" },
-  { src: "./images/fotoGalery2.png", category: "Maquiagem", alt: "Aplicação de maquiagem" },
-  { src: "./images/fotoGalery3.png", category: "Noivas", alt: "Noiva elegante" },
-  { src: "./images/fotoGalery4.png", category: "Cílios", alt: "Extensão de cílios" },
-  { src: "./images/fotoGalery5.png", category: "Casamentos", alt: "Cerimônia de casamento" },
-  { src: "./images/fotoGalery6.png" ,category: "Bastidores", alt: "Atendimento no studio" },
-  { src: "./images/fotoGalery7.png", category: "Maquiagem", alt: "Maquiagem artística" },
-  { src: "./images/fotoGalery8.png", category: "Casamentos", alt: "Casal no altar" },
-  { src: "./images/fotoGalery9.png", category: "Cílios", alt: "Design de cílios" },
-  { src: "./images/fotoGalery10.png", category: "Bastidores", alt: "Penteado sendo feito" },
-  { src: "./images/fotoGalery11.png", category: "Casamentos", alt: "Cerimônia ao ar livre" },
-  { src: "./images/fotoGalery12.png", category: "Noivas", alt: "Noiva sorrindo" },
-];
+const filters = ["Todos", "Casamentos", "Sombrancelha", "Cílios", "Curso"];
 
 export function Gallery() {
   const [activeFilter, setActiveFilter] = useState("Todos");
@@ -27,7 +13,7 @@ export function Gallery() {
   const handleFilter = (filter: string) => {
     if (filter === activeFilter) return; setVisible(false); setTimeout(() => { 
       setActiveFilter(filter); setVisible(true); }, 280); }; 
-      const filtered = activeFilter === "Todos" ? photos : photos.filter((p) => p.category === activeFilter); 
+      const filtered = activeFilter === "Todos" ? photosRadom : photosRadom.filter((p) => p.category === activeFilter); 
       
       return ( <section id="galeria" className="section-padding bg-[rgb(247,244,237)] relative w-[100vw] justify-center p-5 pt-20  z-3"> <div className="container mx-auto px-6"></div>
       <div className="container mx-auto px-6">
