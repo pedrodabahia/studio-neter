@@ -26,7 +26,6 @@ function App() {
           )}
           </AnimatePresence>
 
-         {!isLoading && (        
         <div className="relative min-h-screen  text-white">
         <ParalaxFundo />
         <Hero />
@@ -40,7 +39,7 @@ function App() {
         <Perguntas />
         <CTAFinal />
         </div>
-        )} 
+ 
 
       </section>
 

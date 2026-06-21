@@ -63,7 +63,7 @@ export function Quiz() {
   };
 
   return (
-    <section id="quiz" className="section-padding relative w-full justify-center p-5 pt-20 pb-20 bg-[rgb(235,230,224)] z-3">
+    <section id="quiz" className="section-padding relative w-[100vw] justify-center p-5 pt-20 pb-20 bg-[rgb(235,230,224)] z-3">
       <div className="container mx-auto px-6 max-w-3xl">
         <div
           ref={ref}

@@ -29,7 +29,7 @@ export function Gallery() {
       setActiveFilter(filter); setVisible(true); }, 280); }; 
       const filtered = activeFilter === "Todos" ? photos : photos.filter((p) => p.category === activeFilter); 
       
-      return ( <section id="galeria" className="section-padding bg-[rgb(247,244,237)] relative w-full justify-center p-5 pt-20  z-3"> <div className="container mx-auto px-6"></div>
+      return ( <section id="galeria" className="section-padding bg-[rgb(247,244,237)] relative w-[100vw] justify-center p-5 pt-20  z-3"> <div className="container mx-auto px-6"></div>
       <div className="container mx-auto px-6">
         {/* Header */}
         <div

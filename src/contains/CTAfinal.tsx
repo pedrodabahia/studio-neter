@@ -7,7 +7,7 @@ export function CTAFinal() {
   const [ref, inView] = useInView<HTMLDivElement>();
 
   return (
-    <section id="contato" className="relative w-full overflow-hidden">
+    <section id="contato" className="relative w-[100vw] overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0">
         <img

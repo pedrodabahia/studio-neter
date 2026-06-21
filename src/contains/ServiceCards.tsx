@@ -50,7 +50,7 @@ export function ServiceCards() {
   const [ref, inView] = useInView<HTMLDivElement>();
 
   return (
-    <section className="section-padding relative w-full justify-center p-5 pt-20 bg-[rgb(247,244,237)] z-3" id="beleza">
+    <section className="section-padding relative w-[100vw] justify-center p-5 pt-20 bg-[rgb(247,244,237)] z-3" id="beleza">
       <div className="container mx-auto px-6">
         {/* Header */}
         <div

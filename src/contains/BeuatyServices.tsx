@@ -13,7 +13,7 @@ const services = [
   {
     title: "Extensão de Cílios",
     description: "Fio a fio, volume brasileiro ou híbrido. Cílios impecáveis com durabilidade e leveza.",
-    image: "./images/fotoCilios.webp",
+    image: "./images/fotoCilios.jpg",
     wa: WA.lashes,
   },
   {
@@ -88,7 +88,7 @@ function ServiceCard({
           alt={service.title}
           loading="lazy"
           decoding="async"
-          className="w-full relative top-[-45%] object-cover group-hover:scale-105 transition-transform duration-700"
+          className="w-full relative top-[-50%] object-cover group-hover:scale-105 transition-transform duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-noir/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-400" />
       </div>
